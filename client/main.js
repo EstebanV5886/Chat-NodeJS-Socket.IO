@@ -1,4 +1,4 @@
-const socket = io.connect('http://192.168.1.163:6677', {'forceNew':true});
+const socket = io.connect('yourlocalIP:6677', {'forceNew':true});
 
 socket.on('messages', (data) => {
     console.log(data);
